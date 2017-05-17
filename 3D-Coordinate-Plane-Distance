@@ -1,0 +1,55 @@
+#include<stdio.h>
+#include<iostream>
+#include<cmath>
+
+//Serhat Zahman
+
+using namespace std;
+
+class Koordinat
+{
+	private:
+			double Sayi1[3];
+			double Sayi2[3];
+			double r,a,b,c;
+		public:
+				void Giris()
+				{
+	   			 cout<<"X1 giriniz:"<<endl;
+				  cin>>Sayi1[3];
+				 cout<<"Y1 giriniz:"<<endl;
+				  cin>>Sayi1[3];
+				 cout<<"Z1 giriniz:"<<endl;
+				  cin>>Sayi1[3];
+		
+				 cout<<"X2 giriniz:"<<endl;
+				  cin>>Sayi2[3];
+				 cout<<"Y2 giriniz:"<<endl;
+				  cin>>Sayi2[3];
+				 cout<<"Z2 giriniz:"<<endl;
+				  cin>>Sayi2[3];
+				}
+			
+				void Islem()
+				{
+					a=pow((Sayi1[3]-Sayi2[3]),2);
+					b=pow((Sayi1[3]-Sayi2[3]),2);
+					c=pow((Sayi1[3]-Sayi2[3]),2);
+					
+						r=pow(a+b+c,0.5);
+				}
+				
+				void Goster()
+				{
+				 cout<<"Sonuc= \t"<<r<<endl;
+				}
+			
+
+}Koordinat;
+
+int main()
+{
+	Koordinat.Giris();
+	Koordinat.Islem();
+	Koordinat.Goster();
+}
